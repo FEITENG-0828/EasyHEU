@@ -10,27 +10,31 @@ EasyHEU 是一个用于自动抢课的 Python 工具，旨在帮助HEU的学生�
 
 ## 界面
 
-<img src="resources/demo1.png" alt="demo1.png" style="zoom: 67%;" />
-<img src="resources/demo2.png" alt="demo2.png" style="zoom: 67%;" />
+<img src="./resources/demo1.png" alt="demo1.png" style="zoom: 67%;" />
+<img src="./resources/demo2.png" alt="demo2.png" style="zoom: 67%;" />
 
 ## 开始使用
 
 ### 环境
 
-确保你的环境中已经安装了 Python 和以下依赖：
+确保你的环境中已经安装了 Python
 
-- `selenium`
-- `PyQt5`
-- `ddddocr`
-
-### 安装
+> 虚拟环境可选
 
 克隆项目并进入项目目录：
 
 ```bash
-git clone https://github.com/BitYans/EasyHEU.git
+git clone git@github.com:FEITENG-0828/EasyHEU.git
 cd EasyHEU
 ```
+
+安装依赖包：
+
+```bash
+pip install -r requirements.txt
+```
+
+### 运行
 
 运行主程序：
 
@@ -45,24 +49,12 @@ python main.py
 3. 点击 ”启动“ 按钮，工具将自动登录并打开选课页面。
 4. 点击 "运行" 按钮，工具将自动进行抢课操作。
 
-## 贡献
-
-欢迎各种形式的贡献！如果你发现了 bug、有新功能的想法或者改进建议，请提交 issue 或者直接提出 Pull Request。
-
-## 版本控制
-
-EasyHEU 遵循语义化版本规范。查看[版本更新日志](CHANGELOG.md)以获取详细信息。
-
-## 许可证
-
-EasyHEU 采用 MIT 许可证。详细信息请参阅 [LICENSE](LICENSE) 文件。
-
 ## 鸣谢
 
-感谢所有为该项目做出贡献的人。在[贡献者列表](CONTRIBUTORS.md)中查看更多信息。
+感谢原仓库作者 [BitYans](https://github.com/BitYans/EasyHEU) 
 
 ## 联系方式
 
-在使用过程中遇到问题或有其他需求，请通过 [GitHub Issues](https://github.com/你的用户名/EasyHEU/issues) 进行反馈。
+在使用过程中遇到问题或有其他需求，请通过 [GitHub Issues](https://github.com/FEITENG-0828/EasyHEU/issues) 进行反馈。
 
-希望 EasyHEU 能帮助到你，也欢迎大家共同完善该工具，让我们共同进步！
+希望 EasyHEU 能帮助到你。

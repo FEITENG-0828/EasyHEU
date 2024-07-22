@@ -171,7 +171,7 @@ class LoginThread(QThread):
     def run(self):
         self.stop()
         try:
-            self.driver = webdriver.Chrome()
+            self.driver = webdriver.Edge()
             self.driver.maximize_window()
             self.driver.get("http://jwxk.hrbeu.edu.cn/xsxk/profile/index.html")
             WebDriverWait(self.driver, 1).until(EC.presence_of_element_located((By.ID, "loginDiv")))
@@ -201,7 +201,7 @@ class RushThread(QThread):
 
     def run(self):
         try:
-            self.driver = webdriver.Chrome()
+            self.driver = webdriver.Edge()
             self.driver.maximize_window()
             self.driver.get("http://jwxk.hrbeu.edu.cn/xsxk/profile/index.html")
             WebDriverWait(self.driver, 1).until(EC.presence_of_element_located((By.ID, "loginDiv")))

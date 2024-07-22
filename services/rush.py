@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 
 
 def login(driver, uid, pwd):
-    max_attempts = 5
+    max_attempts = 10
     attempts = 0
 
     while attempts < max_attempts:
@@ -44,7 +44,7 @@ def login(driver, uid, pwd):
             sleep(0.5)
             # 跳过教程
             driver.find_element(By.CSS_SELECTOR,
-                                "img[src='http://jwxk.hrbeu.edu.cn/xsxk/profile/image/guide.png']").click()
+                                "img[src='https://jwxk.hrbeu.edu.cn/xsxk/profile/image/guide.png']").click()
             sleep(0.5)
             logging.info("登录成功")
             break  # 登录成功
@@ -76,7 +76,7 @@ def rush(driver, type, mode, blacklist, whitelist):
     if (type):
         counter = 0
         # 公选课按钮
-        gongxuanke_button = driver.find_element(By.XPATH, "(//li[@role='menuitem'])[2]")
+        gongxuanke_button = driver.find_element(By.XPATH, "(//li[@role='menuitem'])[3]")
         gongxuanke_button.click()
         # 选课
         while 1:
@@ -118,7 +118,7 @@ def rush(driver, type, mode, blacklist, whitelist):
             else:
                 driver.find_element(By.CLASS_NAME, "btn-next").click()
 
-            sleep(0.2)
+            sleep(0.3)
 
     # 专业课
     else:
@@ -164,4 +164,4 @@ def rush(driver, type, mode, blacklist, whitelist):
             else:
                 driver.find_element(By.CLASS_NAME, "btn-next").click()
 
-            sleep(0.2)
+            sleep(0.3)
