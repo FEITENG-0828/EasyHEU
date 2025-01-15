@@ -76,7 +76,7 @@ def rush(driver, type, mode, blacklist, whitelist):
     if (type):
         counter = 0
         # 公选课按钮
-        gongxuanke_button = driver.find_element(By.XPATH, "(//li[@role='menuitem'])[3]")
+        gongxuanke_button = driver.find_element(By.XPATH, "(//li[@role='menuitem'])[2]")
         gongxuanke_button.click()
         # 选课
         while 1:
